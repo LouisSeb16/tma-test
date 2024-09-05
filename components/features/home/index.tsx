@@ -27,7 +27,7 @@ const HomePageComponent = () => {
           </h1>
         </section>
 
-        <Button className="w-full py-[25px] mt-[60px] text-[20px] font-semibold uppercase">
+        <Button className="w-full py-[25px] mt-[60px] font-semibold uppercase">
           <Zap strokeWidth={0.75} className="mr-2 text-orange-300" />
           Farm Points
         </Button>
