@@ -63,7 +63,7 @@ export const LinkComponent = ({ icon, name, url, active }: LinkComponent) => {
         </i>
         <p
           className={cn(
-            "text-[16px]",
+            "text-[15px]",
             active ? "text-white font-extrabold" : "text-[#ccc]"
           )}
         >
