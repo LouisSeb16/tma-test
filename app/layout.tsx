@@ -12,7 +12,7 @@ import { RootInner } from "@/components/shared/root";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "200",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
