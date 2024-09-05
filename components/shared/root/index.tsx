@@ -1,3 +1,4 @@
+"use client";
 import { AppRoot } from "@telegram-apps/telegram-ui";
 import React, { PropsWithChildren } from "react";
 import {
@@ -11,28 +12,13 @@ import {
   bindViewportCSSVars,
 } from "@telegram-apps/sdk-react";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
+import { useTelegramMock } from "@/sdk/hooks/useTelegramMock";
 
-function App(props: PropsWithChildren) {
-  const lp = useLaunchParams();
-  const miniApp = useMiniApp();
-  const themeParams = useThemeParams();
+export function RootInner({ children }: PropsWithChildren) {
 
-  return (
-    <AppRoot
-      appearance={miniApp.isDark ? "dark" : "light"}
-      platform={["macos", "ios"].includes(lp.platform) ? "ios" : "base"}
-    >
-      {props.children}
-    </AppRoot>
-  );
-}
-
-function RootInner({ children }: PropsWithChildren) {
-  return (
-    <SDKProvider acceptCustomStyles debug>
-      <App>
-        {children}
-      </App>
-    </SDKProvider>
-  );
+  console.log(process.env.NODE_ENV)
+  if (process.env.NODE_ENV === "development") {
+    useTelegramMock();
+  }
+  return <SDKProvider acceptCustomStyles>{children}</SDKProvider>;
 }
