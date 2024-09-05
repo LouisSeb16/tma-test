@@ -11,7 +11,7 @@ const HomePageComponent = () => {
     <>
       <div className="w-full h-full">
         <section className="flex flex-col justify-center items-center">
-          <div className="h-[80px] w-[80px] rounded-[50%] flex justify-center items-center text-center bg-[#355af1]">
+          <div className="h-[80px] w-[80px] rounded-[50%] flex justify-center items-center text-center bg-[#355af1] mb-5">
             <h1 className="text-[35px] font-black">
               {/* {initData?.user?.username ? initData?.user?.username.charAt(0).toUpperCase() : 'T'} */}
               U
