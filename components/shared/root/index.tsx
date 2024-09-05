@@ -16,9 +16,9 @@ import { useTelegramMock } from "@/sdk/hooks/useTelegramMock";
 
 export function RootInner({ children }: PropsWithChildren) {
 
-  console.log(process.env.NODE_ENV)
-  if (process.env.NODE_ENV === "development") {
-    useTelegramMock();
-  }
+  // console.log(process.env.NODE_ENV)
+  // if (process.env.NODE_ENV === "development") {
+  //   useTelegramMock();
+  // }
   return <SDKProvider acceptCustomStyles>{children}</SDKProvider>;
 }
