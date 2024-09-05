@@ -33,8 +33,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Nav />
-          <Container className="py-[100px] absolute h-full w-full top-0 right-0 left-0 bottom-0 bg-[#0b0f1f] flex flex-col justify-center items-center overflow-x-hidden">
+          {/* <Nav /> */}
+          <Container className="py-[100px] px-[10px] absolute h-full w-full top-0 right-0 left-0 bottom-0 bg-[#0b0f1f] flex flex-col justify-center items-center overflow-x-hidden">
             <div className="absolute w-full h-[149px] bg-gradient-to-r from-[#fc7916] via-[#880ef7] to-[#1c4df0] opacity-20 blur-[100px] z-20 m-auto top-[100px]"></div>
             <div className="relative z-30 h-full w-full">{children}</div>
             <div className="absolute inset-0 z-20 h-full w-full bg-gradient-to-b from-[rgba(2,6,17,0.7)] via-[rgba(2,6,17,0.1)] to-[rgba(2,6,17,0.8)]">
