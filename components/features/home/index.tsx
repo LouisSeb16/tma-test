@@ -75,7 +75,7 @@ const HomePageComponent = () => {
       <div className="w-full h-full relative py-[100px]">
         <section className="flex flex-col justify-center items-center">
           <div className="h-[80px] w-[80px] rounded-[50%] flex justify-center items-center text-center bg-[#355af1] mb-5">
-            <h1 className="text-[35px] font-black">U</h1>
+            <h1 className="text-[35px] font-black m-0">U</h1>
           </div>
           {/* <h1 className="text-[20px] font-bold">User</h1> */}
         </section>
