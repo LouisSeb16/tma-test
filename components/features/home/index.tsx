@@ -24,7 +24,9 @@ const HomePageComponent = () => {
 
   // Sync mining status and cooldown timer on page load
   useEffect(() => {
-    checkMiningStatus();
+    if (typeof window !== "undefined") {
+      checkMiningStatus();
+    }
   }, [checkMiningStatus]);
 
   // Sync the timer with the miningCooldown from the store
