@@ -70,20 +70,20 @@ const HomePageComponent = () => {
 
   return (
     <>
-      <div className="w-full h-full relative">
-        {/* Confetti component */}
-        {isConfettiActive && <Confetti width={width} height={height} />}
+      {isConfettiActive && <Confetti width={width} height={height} />}
 
+      <div className="w-full h-full relative py-[100px]">
         <section className="flex flex-col justify-center items-center">
           <div className="h-[80px] w-[80px] rounded-[50%] flex justify-center items-center text-center bg-[#355af1] mb-5">
             <h1 className="text-[35px] font-black">U</h1>
           </div>
-          <h1 className="text-[20px] font-bold">User</h1>
+          {/* <h1 className="text-[20px] font-bold">User</h1> */}
         </section>
 
         <section className="flex flex-col justify-center items-center mt-5">
           <h1 className="text-[30px] font-bold">
-            {points.toLocaleString()} <span className="text-[16px] text-[#ccc]">Points</span>
+            {points.toLocaleString()}{" "}
+            <span className="text-[16px] text-[#ccc]">Points</span>
           </h1>
         </section>
 
